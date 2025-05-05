@@ -1,8 +1,14 @@
-from biblioteca import piramide2, numeroPiramide,vogais,produto
+import biblioteca
+text = "yurizin"
+cont = 0
+
+print("Seu texto ao contrario: ", end = "")
+for i in range(len(text) - 1, -1, -1):
+    cont += 1
+    if text[i] in " ":
+        cont -= 1
+
+    print(text[i], end = "")
 
 
-vogais("O rato roeu a roupa do rei de Roma")
-
-resposta = produto("Feijão", 10, 13)
-print(resposta)
-
+print(f"\nSeu texto tem {cont} letras")

@@ -27,3 +27,22 @@ def produto(nomeP, qntdP, valorP):
     calculo = qntdP * valorP
     return f"O valor total de {nomeP} no seu estoque é R${calculo}"
 
+def verificarNum(num):
+    if num == 0:
+        return "Z"
+    elif num > 0:
+        return "P"
+    elif num < 0:
+        return "N"
+    else:
+        return "O valor deve ser um número!"
+
+
+def soma(*itens):
+    soma = 0
+    for i in itens:
+        soma += i
+        return soma
+
+
+
