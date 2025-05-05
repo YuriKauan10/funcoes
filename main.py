@@ -1,14 +1,13 @@
-import biblioteca
-text = "yurizin"
-cont = 0
+lista = [1,2,3,4,4,5,5,7,13,23,1]
 
-print("Seu texto ao contrario: ", end = "")
-for i in range(len(text) - 1, -1, -1):
-    cont += 1
-    if text[i] in " ":
-        cont -= 1
+newList = []
 
-    print(text[i], end = "")
+for x in lista:
+    if x not in newList:
+        newList.append(x)
+print(newList)
 
+novalista = []
+novalista = set(lista)
+print(novalista)
 
-print(f"\nSeu texto tem {cont} letras")
